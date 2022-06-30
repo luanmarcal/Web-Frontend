@@ -1,6 +1,4 @@
-.109_31 { 
-	overflow:hidden;
-}
+
 .e109_31 { 
 	background-color:rgba(234.81250405311584, 234.81250405311584, 234.81250405311584, 1);
 	width:1440px;
@@ -18,23 +16,12 @@
 	background-color:rgba(57.37499848008156, 57.37499848008156, 57.37499848008156, 1);
 	width:400px;
 	height:96px;
-	position:absolute;
-	left:0px;
-	top:0px;
-	border-radius:Symbol(figma.mixed)px;
-}
-.e109_34 { 
 	color:rgba(255, 255, 255, 1);
-	width:27px;
-	height:56px;
-	position:absolute;
-	left:353px;
-	top:20px;
 	font-family:Roboto;
 	text-align:right;
 	font-size:48px;
-	letter-spacing:0;
 }
+
 .e109_35 { 
 	width:400px;
 	height:500px;
@@ -57,9 +44,7 @@
 	left:0px;
 	top:0px;
 }
-.109_37 { 
-	border:0.5px solid rgba(202.93750405311584, 202.93750405311584, 202.93750405311584, 1);
-}
+
 .e109_38 { 
 	color:rgba(0, 0, 0, 1);
 	width:13px;
@@ -80,9 +65,7 @@
 	left:100px;
 	top:0px;
 }
-.109_39 { 
-	border:0.5px solid rgba(202.93750405311584, 202.93750405311584, 202.93750405311584, 1);
-}
+
 .e109_40 { 
 	color:rgba(0, 0, 0, 1);
 	width:14px;
@@ -103,9 +86,7 @@
 	left:200px;
 	top:0px;
 }
-.109_41 { 
-	border:0.5px solid rgba(202.93750405311584, 202.93750405311584, 202.93750405311584, 1);
-}
+
 .e109_42 { 
 	color:rgba(0, 0, 0, 1);
 	width:10px;
@@ -126,9 +107,7 @@
 	left:300px;
 	top:0px;
 }
-.109_43 { 
-	border:0.5px solid rgba(202.93750405311584, 202.93750405311584, 202.93750405311584, 1);
-}
+
 .e109_44 { 
 	color:rgba(0, 0, 0, 1);
 	width:19px;
@@ -147,7 +126,6 @@
 	position:absolute;
 	left:0px;
 	top:100px;
-	border-radius:Symbol(figma.mixed)px;
 }
 .e109_46 { 
 	background-color:rgba(255, 255, 255, 1);
@@ -164,9 +142,7 @@
 	left:0px;
 	top:0px;
 }
-.109_48 { 
-	border:0.5px solid rgba(202.93750405311584, 202.93750405311584, 202.93750405311584, 1);
-}
+
 .e109_48 { 
 	width:100px;
 	height:100px;
@@ -186,9 +162,7 @@
 	font-size:32px;
 	letter-spacing:0;
 }
-.109_50 { 
-	border:0.5px solid rgba(202.93750405311584, 202.93750405311584, 202.93750405311584, 1);
-}
+
 .e109_50 { 
 	width:100px;
 	height:100px;
@@ -208,9 +182,7 @@
 	font-size:32px;
 	letter-spacing:0;
 }
-.109_52 { 
-	border:0.5px solid rgba(202.93750405311584, 202.93750405311584, 202.93750405311584, 1);
-}
+
 .e109_52 { 
 	width:100px;
 	height:100px;
@@ -237,9 +209,7 @@
 	left:0px;
 	top:100px;
 }
-.109_55 { 
-	border:0.5px solid rgba(202.93750405311584, 202.93750405311584, 202.93750405311584, 1);
-}
+
 .e109_55 { 
 	width:100px;
 	height:100px;
@@ -259,9 +229,7 @@
 	font-size:32px;
 	letter-spacing:0;
 }
-.109_57 { 
-	border:0.5px solid rgba(202.93750405311584, 202.93750405311584, 202.93750405311584, 1);
-}
+
 .e109_57 { 
 	width:100px;
 	height:100px;
@@ -281,9 +249,7 @@
 	font-size:32px;
 	letter-spacing:0;
 }
-.109_59 { 
-	border:0.5px solid rgba(202.93750405311584, 202.93750405311584, 202.93750405311584, 1);
-}
+
 .e109_59 { 
 	width:100px;
 	height:100px;
@@ -310,9 +276,7 @@
 	left:0px;
 	top:200px;
 }
-.109_62 { 
-	border:0.5px solid rgba(202.93750405311584, 202.93750405311584, 202.93750405311584, 1);
-}
+
 .e109_62 { 
 	width:100px;
 	height:100px;
@@ -332,9 +296,7 @@
 	font-size:32px;
 	letter-spacing:0;
 }
-.109_64 { 
-	border:0.5px solid rgba(202.93750405311584, 202.93750405311584, 202.93750405311584, 1);
-}
+
 .e109_64 { 
 	width:100px;
 	height:100px;
@@ -354,9 +316,7 @@
 	font-size:32px;
 	letter-spacing:0;
 }
-.109_66 { 
-	border:0.5px solid rgba(202.93750405311584, 202.93750405311584, 202.93750405311584, 1);
-}
+
 .e109_66 { 
 	width:100px;
 	height:100px;
@@ -383,16 +343,13 @@
 	left:0px;
 	top:300px;
 }
-.109_69 { 
-	border:0.5px solid rgba(202.93750405311584, 202.93750405311584, 202.93750405311584, 1);
-}
+
 .e109_69 { 
 	width:100px;
 	height:100px;
 	position:absolute;
 	left:0px;
 	top:0px;
-	border-radius:Symbol(figma.mixed)px;
 }
 .e109_70 { 
 	color:rgba(0, 0, 0, 1);
@@ -406,9 +363,7 @@
 	font-size:32px;
 	letter-spacing:0;
 }
-.109_71 { 
-	border:0.5px solid rgba(202.93750405311584, 202.93750405311584, 202.93750405311584, 1);
-}
+
 .e109_71 { 
 	width:100px;
 	height:100px;
@@ -428,9 +383,7 @@
 	font-size:32px;
 	letter-spacing:0;
 }
-.109_73 { 
-	border:0.5px solid rgba(202.93750405311584, 202.93750405311584, 202.93750405311584, 1);
-}
+
 .e109_73 { 
 	width:100px;
 	height:100px;
@@ -457,11 +410,9 @@
 	position:absolute;
 	left:300px;
 	top:0px;
-	border-radius:Symbol(figma.mixed)px;
+
 }
-.109_75 { 
-	border:0.5px solid rgba(202.93750405311584, 202.93750405311584, 202.93750405311584, 1);
-}
+
 .e109_76 { 
 	color:rgba(0, 0, 0, 1);
 	width:18px;

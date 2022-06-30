@@ -36,9 +36,9 @@ buttonEl.onclick = () => {
 
         select = setInterval(() => {
             adicionaSegundo();
-            secEl.textContent = sec;
-            minEl.textContent = min;
-            hourEl.textContent = hour;
+            secEl.textContent = ("00" + sec).slice(-2);
+            minEl.textContent = ("00" + min).slice(-2);
+            hourEl.textContent = ("00" + hour).slice(-2);
 
         }, 10)
     }
@@ -64,9 +64,9 @@ buttonEl.onclick = () => {
         buttonEl.classList.remove("color02")
         buttonEl.classList.add("e101_22")
 
-        secEl.textContent = sec;
-        minEl.textContent = min;
-        hourEl.textContent = hour;
+        secEl.textContent = ("00" + sec).slice(-2);
+        minEl.textContent = ("00" + min).slice(-2);
+        hourEl.textContent = ("00" + hour).slice(-2);
     }
 
 }
