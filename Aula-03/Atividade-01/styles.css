@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+#table{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 100px;
+}
+
+#title{
+	padding: 20px;
+	font-family: 'Lato', sans-serif;
+	font-size: 24px;
+}
+
+#pesquisa{
+	border-radius: 5px;
+	border: 2px solid black;
+	color: white;
+}
+
+#barraPesquisa{
+	width: 400px;
+	height: 30px;
+}
+
+#botaoAdd{
+	height: 30px;
+	width: 60px;
+	background-color: black;
+}
+
+#tarefas{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	align-items: right;
+	width: 460px;
+	font-weight: 600;
+}
+
+#tarefas span{
+	padding: 5px;
+}
+
+#line{
+	width: 470px;
+	height: 2px;
+	background-color: black;	
+	margin: 10px;
+}
+
+#contagem{
+	display: flex;
+	flex-direction: column;
+}
