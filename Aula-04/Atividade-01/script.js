@@ -4,9 +4,9 @@ const overviewEl = document.querySelector("#overview")
 fetch(`https://api.github.com/users/luanmarcal/repos`,
     {
         method: 'GET',
-        headers: {
-            'Authorization': `token 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`
-        }
+        // headers: {
+        //     'Authorization': `token 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`
+        // }
     })
     .then(response => {
         return response.json();
@@ -25,8 +25,7 @@ function display(response) {
     JSON.stringify(response);
 
     let name = document.createElement('div')
-    let linkName = document.createTextNode(response.html_url
-        );
+    let linkName = document.createTextNode(response.html_url)
     let link = document.createElement('a')
     link.appendChild(linkName)
 
