@@ -1,75 +1,82 @@
-const buttonEl = document.querySelector(".e101_22")
-const secEl = document.querySelector(".e101_18")
-const minEl = document.querySelector(".e101_13")
-const hourEl = document.querySelector(".e101_8")
-const textEl = document.querySelector(".e101_25")
-let select;
+const tarefaEl = document.querySelector('#tarefa')
+const botaoAddEl = document.querySelector('#botaoAdd')
+const barraPesquisaEl = document.querySelector('#barraPesquisa').value
 
-let sec = 0;
-let min = 0;
-let hour = 0;
-let flag = 0;
+botaoAddEl.onclick = console.log(document.querySelector('#barraPesquisa').value)
 
-function adicionaSegundo() {
-    sec += 1;
 
-    if (sec >= 59) {
-        sec = 0;
-        min += 1;
+async function apiCreateTask(description, complete) {
+    const url = 'http://localhost:3000/tasks'
+    const newTask = { description, complete }
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newTask)
     }
+    const response = await fetch(url, options)
 
-    if (min >= 59) {
-        min = 0;
-        hour += 1;
-    }
-}
-
-buttonEl.onclick = () => {
-    flag += 1
-
-    if (flag == 1) {
-        textEl.textContent = "Stop";
-        buttonEl.classList.remove("color02")
-        buttonEl.classList.remove("e101_22")
-        buttonEl.classList.add("color")
-
-        select = setInterval(() => {
-            adicionaSegundo();
-            secEl.textContent = ("00" + sec).slice(-2);
-            minEl.textContent = ("00" + min).slice(-2);
-            hourEl.textContent = ("00" + hour).slice(-2);
-
-        }, 10)
-    }
-
-    if (flag == 2) {
-        textEl.textContent = "Reset";
-        buttonEl.classList.remove("e101_22")
-        buttonEl.classList.remove("color")
-        buttonEl.classList.add("color02")
-
-        clearInterval(select)
-    }
-
-    if (flag == 3) {
-        sec = 0;
-        min = 0;
-        hour = 0;
-        flag2 = 0;
-        flag = 0;
-
-        textEl.textContent = "Start";
-        buttonEl.classList.remove("color")
-        buttonEl.classList.remove("color02")
-        buttonEl.classList.add("e101_22")
-
-        secEl.textContent = ("00" + sec).slice(-2);
-        minEl.textContent = ("00" + min).slice(-2);
-        hourEl.textContent = ("00" + hour).slice(-2);
-    }
-
+    return console.log(await response.json())
 }
 
 
+async function apiGetTask() {
+    const url = 'http://localhost:3000/tasks'
 
+    const response = await fetch(url)
+
+    return console.log(await response.json())
+}
+
+
+async function apiUpdateTask(id, complete) {
+
+    const url = `http://localhost:3000/tasks/${id}`
+    const newTask = { complete }
+    const options = {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(newTask)
+    }
+    const response = await fetch(url, options)
+
+    switch (response.status) {
+        case 204:
+            return console.log("task modificada com sucesso")
+        case 404:
+            return console.log("task não encontrada")
+    }
+
+    return response;
+}
+
+async function apiDeleteTasks(id) {
+    const url = `http://localhost:3000/tasks/${id}`
+    const options = {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+    }
+    const response = await fetch(url, options)
+
+    switch (response.status) {
+        case 204:
+            return console.log("task deletada com sucesso")
+        case 404:
+            return console.log("task não encontrada")
+    }
+
+    return response;
+}
+// apiCreateTask("task", false)
+
+apiGetTask()
+
+// apiUpdateTask(1, false)
+
+// apiDeleteTasks(1);
 

@@ -81,13 +81,21 @@ body{
 	background-color: rgb(212, 212, 212);
 }
 
+hr{
+	margin-top: 20px;
+}
 
-#line{
+input[type="text"]{
+	padding-left: 10px;
+}
+
+
+/* #line{
 	width: 470px;
 	height: 2px;
 	background-color: black;	
 	margin: 10px;
-}
+} */
 
 #contagem{
 	display: flex;
